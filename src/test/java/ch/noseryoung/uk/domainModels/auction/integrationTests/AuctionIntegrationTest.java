@@ -42,6 +42,7 @@ public class AuctionIntegrationTest {
         Auction auction1return = auctionRepository.save(auction1);
         Auction auction2return = auctionRepository.save(auction2);
 
+        // ADDING COMMENT FOR TRYING OUT TRAVIS CI
         mvc.perform(
                 MockMvcRequestBuilders.get("/auctions")
                         .accept(MediaType.APPLICATION_JSON))
